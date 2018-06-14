@@ -1,10 +1,11 @@
 # Ti-Basic Bitcoin Miner
-A bitcoin miner for Texas Instruments calculators (Ti-83 Premium CE/TI-84 Plus CE) fully written in Ti-Basic. It should work on other TI calculators, but I can't check that since I don't have any. It was written on a Ti-83 Premium CE (french model of the TI-84 Plus CE), OS version 5.2.0. It can't actually generate any bitcoins since it's well too slow to mine of the actual blockchain - it uses old blocks that you can find on https://blockchain.info/.
+A bitcoin miner for Texas Instruments calculators (Ti-83 Premium CE/TI-84 Plus CE) fully written in Ti-Basic. It should work on other TI calculators, but I can't check that since I don't have any other. It was written on a Ti-83 Premium CE (french model of the TI-84 Plus CE), OS version 5.2.0. It can't actually generate any bitcoins since it's well too slow to mine of the actual blockchain - it uses old blocks that you can find on https://blockchain.info/.
 
 ## Hashrate
 TBD
 
 ## How to use
+Download Ti-Connect to transfer the files to your calculator.
 Enter your block version/prev_block/merkle_root/time/bits/nonce in Str5/Str6/Str7/Str8/Str9/Str0 in BTCINIT.
 Start BTCMINE and wait for arround 4 hours. Your block hash will be displayed and it will tell you if your nonce is or isn't correct.
 
@@ -12,7 +13,7 @@ Start BTCMINE and wait for arround 4 hours. Your block hash will be displayed an
 Since I can't put any comments in Ti-Basic, here is a summary :
 
 - **BTMINE** : Takes BTCINIT's block informations and generate the block hash.
-
+It uses :
 - **BTCINIT** : Sets some constants, like the block's informations and BCHANGE key.
 - **BTCCONST** : Sets SHA-256 constants in L6.
 - **BTCSTEP1** : Puts the block's informations in decimal in L1 and preprocess them.
@@ -20,7 +21,7 @@ Since I can't put any comments in Ti-Basic, here is a summary :
 - **BTCSTEP3** : SHA-256 compression function of L2. Output in L6(1)-L6(8) (where the constants were for the second round).
 - **BTCSTEP4** : Moves the hash of the block from L6(1)-L6(8) to L1(1)-L1(8) and preprocess them.
 - **BTCSTEP5** : Generates the final hash, diplay it and tell if the nonce was or wansn't correct.
-
+And those use : 
 - **BCHANGE** : Changes the base of Str0 (initial base : A | new base : B) - supports bases 2,10,16 (and 36 as input)
 - **CHOOSE** : SHA-256 Choose function (inputs : S,T,U | output : V)
 - **MAJORITY** : SHA-256 Majority function (inputs : S,T,U | output : V)
