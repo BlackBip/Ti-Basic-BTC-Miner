@@ -1,4 +1,4 @@
-# Ti-Basic-BTC-Miner
+# Ti-Basic Bitcoin Miner
 A bitcoin miner for Texas Instruments calculators (Ti-83 Premium CE/TI-84 Plus CE) fully written in Ti-Basic. It should work on other TI calculators, but I can't check that since I don't have any. It was written on a Ti-83 Premium CE (french model of the TI-84 Plus CE), OS version 5.2.0. It can't actually generate any bitcoins since it's well too slow to mine of the actual blockchain - it uses old blocks that you can find on https://blockchain.info/.
 
 ## Hashrate
@@ -32,7 +32,7 @@ Since I can't put any comments in Ti-Basic, here is a summary :
 
 If that doesn't make any sense to you :
 - **SHA-256 white paper** : http://www.iwar.org.uk/comsec/resources/cipher/sha256-384-512.pdf
-- **A good youtube video on that subject ** : https://www.youtube.com/watch?v=UZBZPOEVyJA
+- **A good youtube video on that subject** : https://www.youtube.com/watch?v=UZBZPOEVyJA
 
 ## In the future
 I don't plan to make a lot of changes to this project, it was done in 2 days to prove how slow those calculators are. It is actually pretty amazing that they can actually do all of this stuff in some sense - and you can do it with 10 strings. I could optimise it a little more, make a loop that will try increase the nonce until the block is solved, but it is well too slow anyway. I know that it would be faster if it was written in C and then compiled in ASM, but that wasn't the point : I did everything directly on the calculator, without tranfering anything from my computer to my calculator, and I can't code in C on my calculator. I ended up learning a lot a things so it wasn't lost time it the end.
