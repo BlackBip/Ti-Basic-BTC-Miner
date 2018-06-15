@@ -16,15 +16,15 @@ Since I can't put any comments in Ti-Basic, here is a summary :
 
 It uses :
 - **BTCINIT** : Sets some constants, like the block's information and BCHANGE key.
-- **BTCCONST** : Sets SHA-256 constants in L6.
-- **BTCSTEP1** : Puts the block's information in decimal in L1 and preprocess them.
-- **BTCSTEP2** : Generates the W(j) list of L1 (W(1)-W(16) are L1(1+16.E)-L1(1+16.E)) in L2.
-- **BTCSTEP3** : SHA-256 compression function of L2. Output in L6(1)-L6(8) (where the constants were for the second round).
-- **BTCSTEP4** : Moves the hash of the block from L6(1)-L6(8) to L1(1)-L1(8) and preprocess them.
-- **BTCSTEP5** : Generates the final hash, display it and tell if the nonce was or wasn't correct.
+- **SHAPREP1** : Puts the block's information in decimal in L1 and preprocess them.
+- **SHAWLIST** : Generates the W(j) list of L1 (W(1)-W(16) are L1(1+16.E)-L1(1+16.E)) in L2.
+- **SHACOMP** : SHA-256 compression function of L2. Output in L6(1)-L6(8) (where the constants were for the second round).
+- **SHAPREP2** : Moves the hash of the block from L6(1)-L6(8) to L1(1)-L1(8) and preprocess them.
+- **BTCDISP** : Generates the final hash, display it and tell if the nonce was or wasn't correct.
 
 And those use : 
 - **BCHANGE** : Changes the base of Str0 (initial base : A | new base : B) - supports bases 2,10,16 (and 36 as input)
+- **SHACONST** : Sets SHA-256 constants in L6.
 - **CHOOSE** : SHA-256 Choose function (inputs : S,T,U | output : V)
 - **MAJORITY** : SHA-256 Majority function (inputs : S,T,U | output : V)
 - **SIGMA0** : SHA-256 SIGMA_0 function (input : S | output : V)
