@@ -2,7 +2,7 @@
 A bitcoin miner for Texas Instruments calculators (Ti-83 Premium CE/TI-84 Plus CE) fully written in Ti-Basic. It should also work on other TI calculators, but I can't check that since I don't have any other. It was written on a Ti-83 Premium CE (french model of the TI-84 Plus CE), OS version 5.2.0. It can't actually generate any bitcoins since it's well too slow to mine on the actual blockchain - it uses old blocks that you can find on https://blockchain.info/.
 
 ## Hashrate
-0.000008 H/S on a Ti-83 Premium CE (3h30 to complete one hash)
+0.00008 H/S on a Ti-83 Premium CE (3h30 to complete one hash)
 
 ## How to use it
 Download Ti-Connect to transfer the files to your calculator.  
