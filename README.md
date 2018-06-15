@@ -1,12 +1,12 @@
 # Ti-Basic Bitcoin Miner
-A bitcoin miner for Texas Instruments calculators (Ti-83 Premium CE/TI-84 Plus CE) fully written in Ti-Basic. It should work on other TI calculators, but I can't check that since I don't have any other. It was written on a Ti-83 Premium CE (french model of the TI-84 Plus CE), OS version 5.2.0. It can't actually generate any bitcoins since it's well too slow to mine of the actual blockchain - it uses old blocks that you can find on https://blockchain.info/.
+A bitcoin miner for Texas Instruments calculators (Ti-83 Premium CE/TI-84 Plus CE) fully written in Ti-Basic. It should also work on other TI calculators, but I can't check that since I don't have any other. It was written on a Ti-83 Premium CE (french model of the TI-84 Plus CE), OS version 5.2.0. It can't actually generate any bitcoins since it's well too slow to mine of the actual blockchain - it uses old blocks that you can find on https://blockchain.info/.
 
 ## Hashrate
 TBD
 
 ## How to use
-Download Ti-Connect to transfer the files to your calculator.
-Enter your block version/prev_block/merkle_root/time/bits/nonce in Str5/Str6/Str7/Str8/Str9/Str0 in BTCINIT.
+Download Ti-Connect to transfer the files to your calculator.  
+Enter your block version/prev_block/merkle_root/time/bits/nonce in Str5/Str6/Str7/Str8/Str9/Str0 in BTCINIT.  
 Start BTCMINE and wait for arround 4 hours. Your block hash will be displayed and it will tell you if your nonce is or isn't correct.
 
 ## How does it works
@@ -39,6 +39,6 @@ If that doesn't make any sense to you :
 I don't plan to make a lot of changes to this project, it was done in 2 days to prove how slow those calculators are. It is actually pretty amazing that they can actually do all of this stuff in some sense - and you can do it with 10 strings. I could optimise it a little more, make a loop that will try increase the nonce until the block is solved, but it is well too slow anyway. I know that it would be faster if it was written in C and then compiled in ASM, but that wasn't the point : I did everything directly on the calculator, without tranfering anything from my computer to my calculator, and I can't code in C on my calculator. I ended up learning a lot a things so it wasn't lost time it the end.
 
 ## How you can help
-If you are better than me in english and see any mistakes, fell free to contact me, that's not my native language.
-IF you have a better calculator (like a TI-Nspire) or an older one (like a Ti-82 Plus) that can run this code, please send me the time that BTCMINE took to run so I can write here.
+If you are better than me in english and see any mistakes, fell free to contact me, that's not my native language.  
+IF you have a better calculator (like a TI-Nspire) or an older one (like a Ti-82 Plus) that can run this code, please send me the time that BTCMINE took to run so I can write here.  
 If you want to improve it, feel free to create a new branch or to ask for commit right.
