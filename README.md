@@ -43,4 +43,4 @@ I don't plan to make a lot of changes to this project, it was done in 2 days to 
 ## How can you help
 If you are better than me in english and see any mistakes, feel free to contact me, that's not my native language.  
 If you have a better calculator (like a TI-Nspire) or an older one (like a Ti-82 Plus) that can run this code, please send me your results so I can write them here.  
-If you want to improve it, feel free to create a new branch or to ask for commit right.
+If you want to improve it, feel free to create a new branch or to ask for collaborator's rights.
