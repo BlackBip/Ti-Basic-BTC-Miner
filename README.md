@@ -40,7 +40,7 @@ If that doesn't make any sense to you :
 ## Future of this project
 I don't plan to make a lot of changes to this project, it was done in 2 days to prove how slow those calculators are. It is actually pretty amazing that they can actually do all of this stuff in some ways - and that you can do it with 10 strings. I could optimise it a little more, make a loop that will increase the nonce until the block is solved, but it is well too slow anyway. I know that it would be faster if it was written in C and compiled in ASM, but that wasn't the point : I did everything directly on the calculator, without tranferring anything from my computer to my calculator. And I can't code in C on my calculator. I ended up learning a lot a things so it wasn't lost time it the end.
 
-## How you can help
+## How can you help
 If you are better than me in english and see any mistakes, feel free to contact me, that's not my native language.  
 If you have a better calculator (like a TI-Nspire) or an older one (like a Ti-82 Plus) that can run this code, please send me your results so I can write them here.  
 If you want to improve it, feel free to create a new branch or to ask for commit right.
