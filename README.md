@@ -4,7 +4,7 @@ A bitcoin miner for Texas Instruments calculators (Ti-83 Premium CE/TI-84 Plus C
 ## Hashrate
 TBD
 
-## How to use
+## How to use it
 Download Ti-Connect to transfer the files to your calculator.  
 Enter your block version/prev_block/merkle_root/time/bits/nonce in Str5/Str6/Str7/Str8/Str9/Str0 in BTCINIT.  
 Start BTCMINE and wait for around 4 hours. Your block hash will be displayed and it will tell you if your nonce is or isn't correct.
