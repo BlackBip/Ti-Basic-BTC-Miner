@@ -12,7 +12,7 @@ Start BTCMINE and wait for around 4 hours. Your block hash will be displayed and
 ## How does it works
 Since I can't put any comments in Ti-Basic, here is a summary :
 
-- **BTMINE** : Takes BTCINIT's block information and generate the block hash.
+- **BTCMINE** : Takes BTCINIT's block information and generate the block hash.
 
 It uses :
 - **BTCINIT** : Sets some constants, like the block's information and BCHANGE key.
